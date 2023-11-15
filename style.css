@@ -1,0 +1,161 @@
+/* Global styles */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+/* Navbar styles */
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px; 
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: black;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600; /* Semi-bold */
+    text-transform: uppercase; 
+    position: relative;
+    margin: 0 20px; 
+}
+
+.navbar a:after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 0;
+    background: white;
+    transition: width 0.3s;
+}
+
+.navbar a:hover:after {
+    width: 100%;
+}
+
+/* Main content styles */
+main {
+    margin-top: 130px; 
+}
+
+/* Section styles */
+#home, #about, #contact, #projects, #extra, #contact {
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    height: 100vh;
+}
+
+.center-container {
+    display: flex;
+    align-items: top;
+    width: 75%;
+    margin: 10 auto;
+}
+
+/* Left and Right area styles */
+.left-area,
+.right-area {
+    padding: 20px;
+}
+
+.left-area {
+    flex: 1;
+}
+
+.left-area h1,
+.left-area h2 {
+    font-size: 3.5rem;
+}
+
+.left-area h2 {
+    margin-bottom: 10px;
+}
+
+.left-area h4 {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+span {
+    color: #FDB827;
+}
+
+.right-area {
+    flex: 1;
+}
+
+.right-area img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Button styles */
+#linkedin-btn,
+#contact-btn {
+    width: 120px;
+    height: 40px;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-size: medium;
+    font-weight: 700;
+    margin-right: 10px;
+    border: none;
+}
+
+#linkedin-btn {
+    background-color: #0072b1;
+    color: white;
+}
+
+#contact-btn {
+    background-color: #FDB827;
+    color: black;
+}
+
+/* About section styles */
+#about {
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    min-height: 100vh; /* Adjusted height to take the full viewport height */
+    padding: 50px 0; /* Adjusted padding for better spacing */
+    text-align: center;
+}
+
+.about-content {
+    width: 100%; /* Full width for a single column layout */
+}
+
+/* About section - Top and Bottom sections */
+.top-section,
+.bottom-section {
+    margin-bottom: 20px; /* Adjusted margin for better spacing between sections */
+    justify-content: center;
+}
+
+/* Technical Skills styles */
+.skills-logos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.skills-logos img {
+    max-width: 40px; /* Adjust the max-width of logos as needed */
+    height: auto;
+    margin-right: 10px; /* Adjusted margin for spacing between logos */
+}
