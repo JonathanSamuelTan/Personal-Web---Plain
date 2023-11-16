@@ -156,7 +156,7 @@ span {
 
 .top-section p{
     line-height: 1.5;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
 }
 
 /* Technical Skills styles */
@@ -172,6 +172,49 @@ span {
     height: auto;
     margin-right: 10px; /* Adjusted margin for spacing between logos */
 }
+
+
+#projects {
+    text-align: center;
+}
+
+.project-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-card {
+    display: flex;
+    width: 1000px;
+    margin: 20px;
+    background-color:#FDB827; /* Background color for the cards */
+    border-radius: 8px; /* Add rounded corners to the cards */
+    overflow: hidden; /* Hide overflowing content */
+    color: black;
+    text-align: left;
+}
+
+.project-card p{
+    line-height: 1.5;
+}
+
+#projects .left-side,
+#projects .right-side {
+    flex: 1;
+    padding: 20px;
+}
+
+#projects .left-side h3 {
+    margin-bottom: 10px;
+}
+
+#projects .right-side img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
 
 #extra {
     display: flex;
