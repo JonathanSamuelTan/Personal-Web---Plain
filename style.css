@@ -274,3 +274,40 @@ span {
     cursor: pointer;
     font-weight: bold;
 }
+
+footer {
+    padding: 0;
+    margin: 0;
+    background-color: #333; /* Dark background color */
+    color: white; /* Text color */
+    padding: 20px; /* Padding for the content inside the footer */
+}
+
+/* Create two sections inside the footer */
+.footer-content {
+    display: flex;
+    justify-content: space-between; /* Separate the left and right sections */
+    align-items: center; /* Align items vertically in the center */
+}
+
+/* Style the left section */
+footer .left-section {
+    font-size: 14px; /* Adjust the font size */
+}
+
+/* Style the right section (social media icons) */
+footer .right-section {
+    display: flex; /* Arrange social media icons in a row */
+}
+
+footer .right-section a {
+    margin-right: 10px; /* Add space between social media icons */
+}
+
+/* Style the social media icons (replace with actual images) */
+footer .right-section img {
+    max-width: 30px; /* Adjust the width of the social media icons */
+    max-height: 30px; /* Adjust the height of the social media icons */
+
+
+}
