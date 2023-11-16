@@ -112,7 +112,7 @@ span {
 
 /* Button styles */
 #linkedin-btn,
-#contact-btn {
+#github-btn {
     width: 120px;
     height: 40px;
     border-radius: 5px;
@@ -128,7 +128,7 @@ span {
     color: white;
 }
 
-#contact-btn {
+#github-btn {
     background-color: #FDB827;
     color: black;
 }
@@ -217,4 +217,60 @@ span {
     text-align: center;
     margin: 0;
     border-radius: 0 0 8px 8px; /* Rounded corners for the bottom of the caption */
+}
+
+
+#contact .contact-content {
+    margin: 0 auto;
+    min-width: 1200px; /* Add a maximum width for better readability */
+}
+
+.contact-content h2{
+    text-align: center;
+}
+
+#contact .split-container {
+    display: flex;
+    justify-content: space-between; /* Add space between the left and right sections */
+    align-items: center;
+    width: 100%;
+}
+
+#contact .left-section,
+#contact .right-section {
+    flex: 1; /* Make both left and right sections take equal width */
+}
+
+#contact .right-section form {
+    display: flex;
+    flex-direction: column; /* Display form elements in a column */
+    align-items: flex-start; /* Align form elements to the left */
+    width: 100%; /* Take full width */
+}
+
+#contact .right-section label {
+    margin-bottom: 8px; /* Adjust the spacing between labels and input fields */
+    font-weight: bold;
+    color : #FDB827;
+}
+
+#contact .right-section input,
+#contact .right-section textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#contact .right-section button {
+    width: 100px;
+    padding: 10px;
+    background-color: #FDB827;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
 }
