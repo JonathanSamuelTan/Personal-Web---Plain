@@ -52,11 +52,18 @@ main {
 }
 
 /* Section styles */
-#home, #about, #contact, #projects, #extra, #contact {
+#about, #contact, #projects, #extra, #contact {
     display: flex;
     justify-content: center;
     align-items: top;
     height: 100vh;
+}
+
+#home{
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    height: 80vh;
 }
 
 .center-container {
@@ -147,15 +154,21 @@ span {
     justify-content: center;
 }
 
+.top-section p{
+    line-height: 1.5;
+    font-size: 1.2rem;
+}
+
 /* Technical Skills styles */
 .skills-logos {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 30px;
 }
 
 .skills-logos img {
-    max-width: 40px; /* Adjust the max-width of logos as needed */
+    max-width: 150px; /* Adjust the max-width of logos as needed */
     height: auto;
     margin-right: 10px; /* Adjusted margin for spacing between logos */
 }
