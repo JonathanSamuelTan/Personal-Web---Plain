@@ -56,43 +56,45 @@ main {
     display: flex;
     justify-content: center;
     align-items: top;
-    height: 100vh;
+    height: 70vh;
+    margin-bottom: 40px; /* Added margin between sections */
 }
 
 #home{
     display: flex;
     justify-content: center;
     align-items: top;
-    height: 80vh;
+    height: 70vh;
+    margin-bottom: 40px; /* Added margin between sections */
 }
 
-.center-container {
+#home .center-container {
     display: flex;
     align-items: top;
     width: 75%;
-    margin: 10 auto;
+    margin: 10px auto; /* Adjusted margin for better spacing */
 }
 
 /* Left and Right area styles */
-.left-area,
-.right-area {
+#home .left-area,
+#home .right-area {
     padding: 20px;
 }
 
-.left-area {
+#home .left-area {
     flex: 1;
 }
 
-.left-area h1,
-.left-area h2 {
+#home .left-area h1,
+#home .left-area h2 {
     font-size: 3.5rem;
 }
 
-.left-area h2 {
+#home .left-area h2 {
     margin-bottom: 10px;
 }
 
-.left-area h4 {
+#home .left-area h4 {
     font-size: 1rem;
     margin-bottom: 20px;
 }
@@ -101,12 +103,13 @@ span {
     color: #FDB827;
 }
 
-.right-area {
+#home .right-area {
     flex: 1;
+    align-items: end;
 }
 
-.right-area img {
-    max-width: 100%;
+#home .right-area img {
+    max-width: 80%;
     height: auto;
 }
 
@@ -144,35 +147,35 @@ span {
 }
 
 .about-content {
-    width: 100%; /* Full width for a single column layout */
+    width: 80%;
+    margin: 0 auto;
 }
 
 /* About section - Top and Bottom sections */
-.top-section,
-.bottom-section {
+#about .top-section,
+#about .bottom-section {
     margin-bottom: 20px; /* Adjusted margin for better spacing between sections */
     justify-content: center;
 }
 
-.top-section p{
+#about .top-section p{
     line-height: 1.5;
     font-size: 1.3rem;
 }
 
 /* Technical Skills styles */
-.skills-logos {
+#about .skills-logos {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 30px;
 }
 
-.skills-logos img {
+#about .skills-logos img {
     max-width: 150px; /* Adjust the max-width of logos as needed */
     height: auto;
     margin-right: 10px; /* Adjusted margin for spacing between logos */
 }
-
 
 #projects {
     text-align: center;
@@ -186,17 +189,19 @@ span {
 
 .project-card {
     display: flex;
-    width: 1000px;
-    margin: 20px;
-    background-color:#FDB827; /* Background color for the cards */
-    border-radius: 8px; /* Add rounded corners to the cards */
-    overflow: hidden; /* Hide overflowing content */
+    width: 80%;
+    background-color: #FDB827;
+    border-radius: 8px;
+    overflow: hidden;
     color: black;
     text-align: left;
+    margin: 0 auto;
+    margin-bottom: 30px;
 }
 
 .project-card p{
     line-height: 1.5;
+    font-size: 1rem; /* Adjusted font size */
 }
 
 #projects .left-side,
@@ -215,11 +220,10 @@ span {
     object-fit: cover;
 }
 
-
 #extra {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: top;
     min-height: 100vh;
     padding: 50px 0;
 }
@@ -254,14 +258,12 @@ span {
     border-radius: 8px; /* Rounded corners for the top of the image */
 }
 
-
 #extra .grid-item p {
     padding: 15px;
     text-align: center;
     margin: 0;
     border-radius: 0 0 8px 8px; /* Rounded corners for the bottom of the caption */
 }
-
 
 #contact .contact-content {
     margin: 0 auto;
@@ -274,25 +276,25 @@ span {
 
 #contact .split-container {
     display: flex;
-    justify-content: space-between; /* Add space between the left and right sections */
+    justify-content: space-between;
     align-items: center;
     width: 100%;
 }
 
 #contact .left-section,
 #contact .right-section {
-    flex: 1; /* Make both left and right sections take equal width */
+    flex: 1;
 }
 
 #contact .right-section form {
     display: flex;
-    flex-direction: column; /* Display form elements in a column */
-    align-items: flex-start; /* Align form elements to the left */
-    width: 100%; /* Take full width */
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
 }
 
 #contact .right-section label {
-    margin-bottom: 8px; /* Adjust the spacing between labels and input fields */
+    margin-bottom: 8px;
     font-weight: bold;
     color : #FDB827;
 }
@@ -321,36 +323,92 @@ span {
 footer {
     padding: 0;
     margin: 0;
-    background-color: #333; /* Dark background color */
-    color: white; /* Text color */
-    padding: 20px; /* Padding for the content inside the footer */
+    background-color: #333;
+    color: white;
+    padding: 20px;
 }
 
 /* Create two sections inside the footer */
 .footer-content {
     display: flex;
-    justify-content: space-between; /* Separate the left and right sections */
-    align-items: center; /* Align items vertically in the center */
+    justify-content: space-between;
+    align-items: center;
 }
 
 /* Style the left section */
 footer .left-section {
-    font-size: 14px; /* Adjust the font size */
+    font-size: 14px;
 }
 
 /* Style the right section (social media icons) */
 footer .right-section {
-    display: flex; /* Arrange social media icons in a row */
+    display: flex;
 }
 
 footer .right-section a {
-    margin-right: 10px; /* Add space between social media icons */
+    margin-right: 10px;
 }
 
 /* Style the social media icons (replace with actual images) */
 footer .right-section img {
-    max-width: 30px; /* Adjust the width of the social media icons */
-    max-height: 30px; /* Adjust the height of the social media icons */
+    max-width: 30px;
+    max-height: 30px;
+}
+
+/* Media query for screens smaller than 768px */
+@media only screen and (max-width: 768px) {
+    #home .center-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #home .left-area,
+    #home .right-area {
+        padding: 10px;
+    }
+
+    #home .right-area img {
+        max-width: 60%; /* Adjust the percentage as needed */
+        height: auto;
+    }
+
+    #home .left-area {
+        order: 2;
+    }
+
+    #home .right-area {
+        order: 1;
+    }
+
+    .skills-logos {
+    }
+
+    #projects .project-card {
+        width: calc(100% - 20px);
+        margin: 10px;
+        padding: 15px; /* Added padding for space from phone borders */
+    }
 
 
+    #projects .left-side,
+    #projects .right-side {
+        padding: 10px;
+    }
+
+    #projects .left-side h3 {
+        font-size: 1.5rem;
+    }
+
+    #extra .grid-item {
+        margin-bottom: 20px;
+    }
+
+    #extra,
+    #home{
+        margin-bottom: 100px;
+    }
+
+    .skills-logos {
+        margin-top: 20px;
+    }
 }
