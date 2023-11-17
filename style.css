@@ -405,13 +405,20 @@ footer .right-section img {
 
     #home .left-area {
         order: 2;
-        align-items: center;
         justify-content: center;
+        align-items: flex-start;
     }
 
     #home .right-area {
         order: 1;
     }
+
+    #home .left-area h1,
+    #home .left-area h2{
+        text-align: center;
+    }
+
+
 
     
     #about .top-section p{
@@ -425,14 +432,16 @@ footer .right-section img {
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
         margin: 0 auto;
     }
     #projects .project-card {
         flex-direction: column;
         width: 80%;
-        margin-left: 20px;
-        margin-right: 20px;
+        margin : 0 auto;
         margin-bottom: 20px;
+        align-items: center;
+        justify-content: center;
         padding: 15px; /* Added padding for space from phone borders */
     }
 
