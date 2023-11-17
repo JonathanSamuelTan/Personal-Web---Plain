@@ -614,6 +614,12 @@ span {
     flex: 1;
 }
 
+#contact .left-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 #contact .right-section form {
     display: flex;
     flex-direction: column;
@@ -629,7 +635,7 @@ span {
 
 #contact .right-section input,
 #contact .right-section textarea {
-    width: 100%;
+    width: 80%;
     padding: 8px;
     margin-bottom: 16px;
     border: 1px solid #fff;
@@ -772,5 +778,27 @@ footer .right-section img {
 
     .skills-logos {
         margin-top: 20px;
+    }
+
+    #contact .split-container {
+        flex-direction: column; /* Stack the sections vertically on small screens */
+        align-items: center; /* Center items in the container */
+        max-width: 700px;
+    }
+
+    #contact .left-section {
+        order: 1;
+        width:40%;
+        height: auto;
+    }
+
+    #contact .right-section {
+        order: 2;
+        width: 70%; /* Take full width on small screens */
+    }
+
+    #contactForm {
+        max-width: 400px; /* Adjust the maximum width of the form */
+        margin: 0 auto; /* Center the form horizontally */
     }
 }
