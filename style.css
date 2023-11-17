@@ -16,7 +16,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 80px; 
+    height: 80px;
     position: fixed;
     top: 0;
     width: 100%;
@@ -27,10 +27,10 @@ body {
 .navbar a {
     text-decoration: none;
     color: white;
-    font-weight: 600; /* Semi-bold */
-    text-transform: uppercase; 
+    font-weight: 600;
+    text-transform: uppercase;
     position: relative;
-    margin: 0 20px; 
+    margin: 0 20px;
 }
 
 .navbar a:after {
@@ -48,31 +48,27 @@ body {
 
 /* Main content styles */
 main {
-    margin-top: 130px; 
+    margin-top: 130px;
 }
 
 /* Section styles */
-#about, #contact, #projects, #extra, #contact {
+#about,
+#extra,
+#home {
     display: flex;
     justify-content: center;
     align-items: top;
     height: 70vh;
-    margin-bottom: 40px; /* Added margin between sections */
-}
-
-#home{
-    display: flex;
-    justify-content: center;
-    align-items: top;
-    height: 70vh;
-    margin-bottom: 40px; /* Added margin between sections */
+    margin-bottom: 40px;
+    /* Added margin between sections */
 }
 
 #home .center-container {
     display: flex;
     align-items: top;
     width: 75%;
-    margin: 10px auto; /* Adjusted margin for better spacing */
+    margin: 10px auto;
+    /* Adjusted margin for better spacing */
 }
 
 /* Left and Right area styles */
@@ -141,8 +137,10 @@ span {
     display: flex;
     justify-content: center;
     align-items: top;
-    min-height: 100vh; /* Adjusted height to take the full viewport height */
-    padding: 50px 0; /* Adjusted padding for better spacing */
+    min-height: 100vh;
+    /* Adjusted height to take the full viewport height */
+    padding: 50px 0;
+    /* Adjusted padding for better spacing */
     text-align: center;
 }
 
@@ -154,11 +152,12 @@ span {
 /* About section - Top and Bottom sections */
 #about .top-section,
 #about .bottom-section {
-    margin-bottom: 20px; /* Adjusted margin for better spacing between sections */
+    margin-bottom: 20px;
+    /* Adjusted margin for better spacing between sections */
     justify-content: center;
 }
 
-#about .top-section p{
+#about .top-section p {
     line-height: 1.5;
     font-size: 1.3rem;
 }
@@ -166,15 +165,21 @@ span {
 /* Technical Skills styles */
 #about .skills-logos {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     margin-top: 30px;
+    flex-wrap: wrap;
+    flex-basis: calc(25% - 10px);
 }
 
 #about .skills-logos img {
-    max-width: 150px; /* Adjust the max-width of logos as needed */
+    max-width: 150px;
+    /* Adjust the max-width of logos as needed */
     height: auto;
-    margin-right: 10px; /* Adjusted margin for spacing between logos */
+    margin-right: 30px;
+    /* Adjusted margin for spacing between logos */
+    margin-bottom: 30px;
+    /* Adjusted margin for spacing between logos */
 }
 
 #projects {
@@ -199,9 +204,10 @@ span {
     margin-bottom: 30px;
 }
 
-.project-card p{
+.project-card p {
     line-height: 1.5;
-    font-size: 1rem; /* Adjusted font size */
+    font-size: 1rem;
+    /* Adjusted font size */
 }
 
 #projects .left-side,
@@ -229,14 +235,19 @@ span {
 }
 
 #extra .center-container {
-    text-align: center; /* Center text content horizontally */
-    width: 100%; /* Ensure full width */
+    text-align: center;
+    /* Center text content horizontally */
+    width: 100%;
+    /* Ensure full width */
 }
 
 #extra .extra-content {
-    max-width: 1200px; /* Adjusted max-width for better readability */
-    width: 100%; /* Full width for a single column layout */
-    margin: 0 auto; /* Center content horizontally */
+    max-width: 1200px;
+    /* Adjusted max-width for better readability */
+    width: 100%;
+    /* Full width for a single column layout */
+    margin: 0 auto;
+    /* Center content horizontally */
 }
 
 #extra .grid-container {
@@ -253,24 +264,29 @@ span {
 
 #extra .grid-item img {
     width: 100%;
-    height: 200px; /* Set a specific height (adjust as needed) */
-    object-fit: cover; /* Ensure the image covers the specified height without distortion */
-    border-radius: 8px; /* Rounded corners for the top of the image */
+    height: 200px;
+    /* Set a specific height (adjust as needed) */
+    object-fit: cover;
+    /* Ensure the image covers the specified height without distortion */
+    border-radius: 8px;
+    /* Rounded corners for the top of the image */
 }
 
 #extra .grid-item p {
     padding: 15px;
     text-align: center;
     margin: 0;
-    border-radius: 0 0 8px 8px; /* Rounded corners for the bottom of the caption */
+    border-radius: 0 0 8px 8px;
+    /* Rounded corners for the bottom of the caption */
 }
 
 #contact .contact-content {
     margin: 0 auto;
-    min-width: 1200px; /* Add a maximum width for better readability */
+    min-width: 1200px;
+    /* Add a maximum width for better readability */
 }
 
-.contact-content h2{
+.contact-content h2 {
     text-align: center;
 }
 
@@ -296,7 +312,7 @@ span {
 #contact .right-section label {
     margin-bottom: 8px;
     font-weight: bold;
-    color : #FDB827;
+    color: #FDB827;
 }
 
 #contact .right-section input,
@@ -355,8 +371,15 @@ footer .right-section img {
     max-height: 30px;
 }
 
+
 /* Media query for screens smaller than 768px */
 @media only screen and (max-width: 768px) {
+
+    #home,
+    #about,
+    #extra{
+        margin-bottom: 300px;
+    }
     #home .center-container {
         flex-direction: column;
         text-align: center;
@@ -380,7 +403,12 @@ footer .right-section img {
         order: 1;
     }
 
-    .skills-logos {
+    
+    #about .top-section p{
+        line-height: 1.5;
+        font-size: 1.1rem;
+        width: 500px;
+        margin: 0 auto;
     }
 
     #projects .project-card {
@@ -401,11 +429,8 @@ footer .right-section img {
 
     #extra .grid-item {
         margin-bottom: 20px;
-    }
-
-    #extra,
-    #home{
-        margin-bottom: 100px;
+        margin-left: 20px;
+        margin-right: 20px;
     }
 
     .skills-logos {
