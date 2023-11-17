@@ -283,7 +283,6 @@ span {
 
 #contact .contact-content {
     margin: 0 auto;
-    min-width: 1200px;
     /* Add a maximum width for better readability */
 }
 
@@ -293,9 +292,10 @@ span {
 
 #contact .split-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 80%;
+    margin: 0 auto;
 }
 
 #contact .left-section,
@@ -307,7 +307,6 @@ span {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 100%;
 }
 
 #contact .right-section label {
@@ -372,326 +371,17 @@ footer .right-section img {
     max-height: 30px;
 }
 
-#home .center-container {
-    display: flex;
-    align-items: top;
-    width: 75%;
-    margin: 0 auto;
-    /* Adjusted margin for better spacing */
-}
-
-/* Left and Right area styles */
-#home .left-area,
-#home .right-area {
-    padding: 20px;
-}
-
-#home .left-area {
-    flex: 1;
-}
-
-#home .left-area h1,
-#home .left-area h2 {
-    font-size: 3.5rem;
-}
-
-#home .left-area h2 {
-    margin-bottom: 10px;
-}
-
-#home .left-area h4 {
-    font-size: 1rem;
-    margin-bottom: 20px;
-}
-
-span {
-    color: #FDB827;
-}
-
-#home .right-area {
-    flex: 1;
-    align-items: end;
-}
-
-#home .right-area img {
-    max-width: 80%;
-    height: auto;
-}
-
-/* Button styles */
-#linkedin-btn,
-#github-btn {
-    width: 120px;
-    height: 40px;
-    border-radius: 5px;
-    font-family: 'Poppins', sans-serif;
-    font-size: medium;
-    font-weight: 700;
-    margin-right: 10px;
-    border: none;
-}
-
-#linkedin-btn {
-    background-color: #0072b1;
-    color: white;
-}
-
-#github-btn {
-    background-color: #FDB827;
-    color: black;
-}
-
-/* About section styles */
-#about {
-    display: flex;
-    justify-content: center;
-    align-items: top;
-    min-height: 100vh;
-    /* Adjusted height to take the full viewport height */
-    padding: 50px 0;
-    /* Adjusted padding for better spacing */
-    text-align: center;
-}
-
-.about-content {
-    width: 80%;
-    margin: 0 auto;
-    align-items: top;
-}
-
-/* About section - Top and Bottom sections */
-#about .top-section,
-#about .bottom-section {
-    margin-bottom: 20px;
-    /* Adjusted margin for better spacing between sections */
-    justify-content: center;
-}
-
-#about .top-section p {
-    line-height: 1.5;
-    font-size: 1.3rem;
-}
-
-/* Technical Skills styles */
-#about .skills-logos {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 30px;
-    flex-wrap: wrap;
-    flex-basis: calc(25% - 10px);
-}
-
-#about .skills-logos img {
-    max-width: 150px;
-    /* Adjust the max-width of logos as needed */
-    height: auto;
-    margin-right: 30px;
-    /* Adjusted margin for spacing between logos */
-    margin-bottom: 30px;
-    /* Adjusted margin for spacing between logos */
-}
-
-#projects {
-    text-align: center;
-}
-
-.project-cards {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.project-card {
-    display: flex;
-    width: 80%;
-    background-color: #FDB827;
-    border-radius: 8px;
-    overflow: hidden;
-    color: black;
-    text-align: left;
-    margin: 0 auto;
-    margin-bottom: 30px;
-}
-
-.project-card p {
-    line-height: 1.5;
-    font-size: 1rem;
-    /* Adjusted font size */
-}
-
-#projects .left-side,
-#projects .right-side {
-    flex: 1;
-    padding: 20px;
-}
-
-#projects .left-side h3 {
-    margin-bottom: 10px;
-}
-
-#projects .right-side img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-}
-
-#extra {
-    display: flex;
-    justify-content: center;
-    align-items: top;
-    min-height: 100vh;
-    padding: 50px 0;
-}
-
-#extra .center-container {
-    text-align: center;
-    /* Center text content horizontally */
-    width: 100%;
-    align-items: flex-start;
-    justify-content: center;
-    /* Ensure full width */
-}
-
-#extra .extra-content {
-    max-width: 1200px;
-    /* Adjusted max-width for better readability */
-    width: 100%;
-    /* Full width for a single column layout */
-    margin: 0 auto;
-    /* Center content horizontally */
-}
-
-#extra .grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 20px;
-}
-
-#extra .grid-item {
-    overflow: hidden;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-#extra .grid-item img {
-    width: 100%;
-    height: 200px;
-    /* Set a specific height (adjust as needed) */
-    object-fit: cover;
-    /* Ensure the image covers the specified height without distortion */
-    border-radius: 8px;
-    /* Rounded corners for the top of the image */
-}
-
-#extra .grid-item p {
-    padding: 15px;
-    text-align: center;
-    margin: 0;
-    border-radius: 0 0 8px 8px;
-    /* Rounded corners for the bottom of the caption */
-}
-
-#contact .contact-content {
-    margin: 0 auto;
-    min-width: 1200px;
-    /* Add a maximum width for better readability */
-}
-
-.contact-content h2 {
-    text-align: center;
-}
-
-#contact .split-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-}
-
-#contact .left-section,
-#contact .right-section {
-    flex: 1;
-}
-
-#contact .left-section{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#contact .right-section form {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 100%;
-}
-
-#contact .right-section label {
-    margin-bottom: 8px;
-    font-weight: bold;
-    color: #FDB827;
-}
-
-#contact .right-section input,
-#contact .right-section textarea {
-    width: 80%;
-    padding: 8px;
-    margin-bottom: 16px;
-    border: 1px solid #fff;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-
-#contact .right-section button {
-    width: 100px;
-    padding: 10px;
-    background-color: #FDB827;
-    color: black;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-weight: bold;
-}
-
-footer {
-    padding: 0;
-    margin: 0;
-    background-color: #333;
-    color: white;
-    padding: 20px;
-}
-
-/* Create two sections inside the footer */
-.footer-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-/* Style the left section */
-footer .left-section {
-    font-size: 14px;
-}
-
-/* Style the right section (social media icons) */
-footer .right-section {
-    display: flex;
-}
-
-footer .right-section a {
-    margin-right: 10px;
-}
-
-/* Style the social media icons (replace with actual images) */
-footer .right-section img {
-    max-width: 30px;
-    max-height: 30px;
-}
+/* ------------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------------ */
 
 
-/* Media query for screens smaller than 768px */
 @media only screen and (max-width: 768px) {
+    
+    img {
+        max-width: 100%;
+        height: auto;
+    }
 
     #home,
     #about,
@@ -715,6 +405,8 @@ footer .right-section img {
 
     #home .left-area {
         order: 2;
+        align-items: center;
+        justify-content: center;
     }
 
     #home .right-area {
@@ -780,25 +472,23 @@ footer .right-section img {
         margin-top: 20px;
     }
 
-    #contact .split-container {
-        flex-direction: column; /* Stack the sections vertically on small screens */
-        align-items: center; /* Center items in the container */
-        max-width: 700px;
-    }
+    #contact .contact-content{
+        width: 500px
 
-    #contact .left-section {
-        order: 1;
-        width:40%;
-        height: auto;
+    }
+    #contact .split-container {
+        flex-direction: column;
+        align-items: center; /* Center items horizontally */
+        width: 500px;
     }
 
     #contact .right-section {
-        order: 2;
-        width: 70%; /* Take full width on small screens */
+        order: -1; /* Move the right section (form) to the bottom */
+        margin-top: 20px; /* Add some space between the image and form */
+        width: 100%;
     }
 
-    #contactForm {
-        max-width: 400px; /* Adjust the maximum width of the form */
-        margin: 0 auto; /* Center the form horizontally */
+    #contact .left-section{
+        display: none;
     }
 }
