@@ -372,11 +372,6 @@ footer .right-section img {
     max-height: 30px;
 }
 
-    height: 70vh;
-    margin-bottom: 40px;
-    /* Added margin between sections */
-}
-
 #home .center-container {
     display: flex;
     align-items: top;
